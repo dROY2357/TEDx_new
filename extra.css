@@ -2,3 +2,14 @@
     display: block;
     width: 30%;
 }
+.bottom-left{
+    position:absolute;
+    bottom: 80px;
+    left: 50px;
+    font-size: 43px;
+}
+.bottom-l{
+    position: relative;
+    bottom: 70px;
+    left:50px;
+}
