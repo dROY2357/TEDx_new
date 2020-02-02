@@ -1,9 +1,13 @@
-html{
+body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 .spkimg{
     display: block;
     width: 30%;
+    position: relative;
+    top:25%;
 }
 .bottom-left{
     position:absolute;
@@ -28,11 +32,23 @@ html{
     right: 10%;
 }
 
+.fullscreen{
+    width: 105%;
+    margin-left: -2%;
+    padding-left: 2%;
+}
+
+.heading{font-size: 56px;}
+
+.tagline{font-size: 36px;}
+
 @media (max-width:640px){
     .spkimg{
         display: block;
         width: 60%;
     }
 
+    .heading{font-size: 36px;}
+    .tagline{font-size: 24px;}
 }
 
