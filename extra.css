@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .spkimg{
     display: block;
     width: 30%;
