@@ -12,7 +12,27 @@ html{
     font-size: 43px;
 }
 .bottom-l{
-    position: relative;
+    position: absolute;
     bottom: 70px;
     left:50px;
 }
+.c-left{
+    position:fixed;
+    top: 50%;
+    left: 10%;
+}
+
+.c-right{
+    position: fixed;
+    top: 50%;
+    right: 10%;
+}
+
+@media (max-width:640px){
+    .spkimg{
+        display: block;
+        width: 60%;
+    }
+
+}
+
