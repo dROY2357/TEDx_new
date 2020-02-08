@@ -12,6 +12,19 @@ body{
   font-weight: 500;
 }
 
+
+.scroll-menu{
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateX(500px) translateY(-500px);;
+    transform-origin: right top;
+}
+.scroll-menu > div{
+    transform: rotate(90deg) translateX(-100px);
+}
+  
+
 .grad{
     background: linear-gradient(30deg, red 15%, pink 40%, purple 70%, red 100%);
     background-size: 400%;
