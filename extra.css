@@ -2,6 +2,15 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+@font-face {
+  font-family: chalet;
+  src: url(chalet.otf);
+}
+
+* {
+  font-family: chalet;
+  font-weight: 500;
+}
 
 .grad{
     background: linear-gradient(30deg, red 15%, pink 40%, purple 70%, red 100%);
@@ -38,9 +47,6 @@ body{
     }
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 0%; transition: 1s ease;}
 @media (min-width:1100px){
