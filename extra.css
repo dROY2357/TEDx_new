@@ -12,16 +12,39 @@ body{
   font-weight: 500;
 }
 
+.horizontal{  
+    display: flex;    
+    min-width: 100%;
+    min-height: 200px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.horizontal div{
+    min-width: 25%;
+    margin: 10px;
+}
+
+.horizontal div p{
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+/*.horizontal::-webkit-scrollbar{
+    display: block;
+}*/
 
 .scroll-menu{
     height: auto;
+    width: 900px;
     overflow-y: scroll;
     overflow-x: hidden;
     transform: rotate(-90deg) translateX(500px) translateY(-500px);;
     transform-origin: right top;
 }
-.scroll-menu > div{
+.scroll-menu > img{
     transform: rotate(90deg) translateX(-100px);
+    width: 400px;
 }
   
 
@@ -138,6 +161,12 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
     .tagline{font-size: 24px;}
     
     .bigx{z-index: 1; background: url(bigxphone.png); height: 700px; width: 100%; background-repeat: no-repeat;}
+
+    
+    .horizontal div{
+        min-width: 80%;
+        margin: 10px;
+    }
 
 }
 
