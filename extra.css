@@ -20,6 +20,7 @@ body{
     width: auto;
     min-height: 300px;
     overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: auto;
     align-items: flex-start;
     -webkit-overflow-scrolling: touch;
@@ -36,7 +37,7 @@ body{
 
 .horizontal div p{
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .horizontal div img{
@@ -46,20 +47,6 @@ body{
 .horizontal::-webkit-scrollbar{
     display: none;
 }
-
-.scroll-menu{
-    height: auto;
-    width: 900px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    transform: rotate(-90deg) translateX(500px) translateY(-500px);;
-    transform-origin: right top;
-}
-.scroll-menu > img{
-    transform: rotate(90deg) translateX(-100px);
-    width: 400px;
-}
-  
 
 .grad{
     background: linear-gradient(30deg, red 15%, pink 40%, purple 70%, red 100%);
