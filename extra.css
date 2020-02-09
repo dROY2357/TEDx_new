@@ -12,17 +12,26 @@ body{
   font-weight: 500;
 }
 
-.horizontal{  
-    display: flex;    
-    min-width: 100%;
-    min-height: 200px;
+.horizontal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    width: auto;
+    min-height: 300px;
     overflow-x: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    align-items: flex-start;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .horizontal div{
-    min-width: 25%;
+    min-width: 30%;
     margin: 10px;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .horizontal div p{
@@ -30,9 +39,13 @@ body{
     font-size: 24px;
 }
 
-/*.horizontal::-webkit-scrollbar{
-    display: block;
-}*/
+.horizontal div img{
+    height: 300px;
+}
+
+.horizontal::-webkit-scrollbar{
+    display: none;
+}
 
 .scroll-menu{
     height: auto;
@@ -166,6 +179,11 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
     .horizontal div{
         min-width: 80%;
         margin: 10px;
+        height: 360px;
+    }
+    
+    .horizontal div img{
+        height: 200px;
     }
 
 }
