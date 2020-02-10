@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+        <title>TEDxREVA University Team</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://fluentdesignforweb.github.io/normalize.css" rel="stylesheet" type="text/css">
+        <link href="https://fluentdesignforweb.github.io/fluent.css" type="text/css" rel="stylesheet">
+        <link href="../extra.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="scroll.js"></script>
+    </head>
+</html>
+
+<body class="primary_inverted" onload="openmod1()">
+    <div id="body">
+        <div class="fullscreen">
+            <div class="column large12 pivot_container primary_inverted">
+                <button class=" primary_inverted small left"><span style="color: red">TEDx</span>REVAUniversity</button>
+                <button class=" primary_inverted small right">Schedule</button>
+                <a href="../team/team.html"><button class=" primary_inverted small right">Team</button></a>
+                <button class=" primary_inverted small right">Partners</button>
+                <a href="../speaker/speaker1.html"><button class=" primary_inverted small right">Speakers</button></a>
+                <button class=" primary_inverted small right">About</button>
+                <button class=" primary_inverted small right">Home</button>
+            </div>
+            <div>
+                <br><br><br><br><br><br>
+                    <div class="page_container">
+                        <h1>Team </h1><br><br>
+                        <div class="horizontal" onmousewheel="scrleft(event);" id="scroll">
+                            <div class="primary_white zi2">
+                                <img src="organisers.jpg" class="tmname">
+                                <p>Organizing</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="operations.jpg">
+                                <p>Operations</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="finance.jpg">
+                                <p>Finance and Management</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="webdesign.png">
+                                <p>Web Design and User Experience</p>
+                                <button class="ms-Icon ms-Icon--Info primary_red" onclick="openmod1()" style="margin-left: 20px;">Know More</button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="mddir2.jpg">
+                                <p>Media Direction</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="graphics.jpg">
+                                <p>Graphics Design</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="curation.jpg">
+                                <p>Curation</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="content.jpg">
+                                <p>Content Writing</p>
+                                <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        </body>
+        <div class="modal_container" id="mod1">
+            <div class="modal_content zi3" id="modct1">
+                <div class="dialogue_pane large12">
+                    <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
+                </div>
+                <div class="page_container">
+                    <h2>This Is Some Content</h2>
+                </div>
+            </div>
+        </div>
+    </html>

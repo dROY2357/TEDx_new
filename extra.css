@@ -30,7 +30,6 @@ body{
 .horizontal div{
     min-width: 30%;
     margin: 10px;
-    pointer-events: none;
     justify-content: center;
     align-items: center;
 }
