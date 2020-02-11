@@ -12,6 +12,13 @@ body{
   font-weight: 500;
 }
 
+.team .horizontal div img{
+    max-height: 100px;
+}
+
+.team .horizontal{
+    min-height: 150px;
+}
 .horizontal{
     position: relative;
     display: flex;
@@ -185,4 +192,38 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
     .large6{width: 48%; height: 700px;}
 
     .bigx{z-index: 1; background: url(bigxmed.png); height: 720px; width: 100%; background-repeat: no-repeat;}
+}
+.vertical{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;  
+    width: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    align-items: flex-start;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.vertical div{
+    min-width: 30%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical div p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.vertical div img{
+    height: 300px;
+}
+
+.vertical::-webkit-scrollbar{
+    display: none;
 }
