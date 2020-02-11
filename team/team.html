@@ -9,6 +9,7 @@
         <link href="../extra.css" type="text/css" rel="stylesheet">
         <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
         <script src="scroll.js"></script>
+        <script src="on_screen_window.js"></script>
     </head>
 </html>
 
@@ -17,9 +18,9 @@
         <div class="column large12 pivot_container primary_inverted">
             <button class=" primary_inverted small left"><span style="color: red">TEDx</span>REVAUniversity</button>
             <button class=" primary_inverted small right">Schedule</button>
-            <a href="team/team.html"><button class=" primary_inverted small right">Team</button></a>
+            <a href="../team/team.html"><button class=" primary_inverted small right">Team</button></a>
             <button class=" primary_inverted small right">Partners</button>
-            <a href="speaker/speaker1.html"><button class=" primary_inverted small right">Speakers</button></a>
+            <a href="../speaker/speaker1.html"><button class=" primary_inverted small right">Speakers</button></a>
             <button class=" primary_inverted small right">About</button>
             <button class=" primary_inverted small right">Home</button>
         </div>
@@ -46,7 +47,7 @@
                         <div class="primary_white zi2" class="tmname">
                             <img src="webdesign.png">
                             <p>Web Design and User Experience</p>
-                            <button class="icon ms-Icon ms-Icon--Info primary_red" style="margin-left: 20px;"></button>
+                            <button class="icon ms-Icon ms-Icon--Info primary_red" onclick="openmod1();" style="margin-left: 20px;"></button>
                         </div>
                         <div class="primary_white zi2" class="tmname">
                             <img src="mddir2.jpg">
@@ -72,4 +73,54 @@
                 </div>
         </div>
         </body>
+        <div class="modal_container" id="mod1" style="display: none;">
+            <div class="modal_content primary_white zi3" id="modct1">
+                <div class="dialogue_pane large12">
+                    <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
+                </div>
+                <div class="page_container">
+                    <div class="column large8 medium12 small12" style="min-height: 50%;">
+                        <br><br><br>
+                        <h2>Web Design and User Experience</h2>
+                    </div>
+                    <div class="column large4 medium12 small12" style="min-height: 50%; position: relative;">
+                        <img src="shiv.jpg" style="width: 70%; transform: translate(25%);">
+                        <div style="position: absolute; transform: translate(75%, -200%); background-color: white;">
+                            Shivendra Saurav
+                        </div>
+                    </div> 
+                    <div class="column large8 medium12 small12" style="min-height: 50%;">
+                        Some info.
+                    </div>
+                    <div class="column large4 medium12 small12 team" style="min-height: 50%;">
+                        <div class="horizontal" onmousewheel="scrvertical(event);" id="vscroll">
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="organisers.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="operations.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="finance.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="webdesign.png">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="mddir2.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="graphics.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="curation.jpg">
+                            </div>
+                            <div class="primary_white zi2" class="tmname">
+                                <img src="content.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </html>

@@ -10,3 +10,15 @@ function scrleft(){
         a.scrollTop += 0;
     }
 }
+function scrvertical(){
+    var a = document.getElementById("vscroll");
+    var b = event.deltaY;
+    if(b > 0){
+        a.scrollLeft +=250;
+        a.scrollTop += 0;
+    }
+    else{
+        a.scrollLeft -=250;
+        a.scrollTop += 0;
+    }
+}
