@@ -229,20 +229,17 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 }
 
 .overlay h1{
-    position: absolute;
-    bottom: 25px;
-    left: 25%;
-    width: 60%
+    position: relative;
+    top: 80%;
     font-size: 28px;
     text-align: center;
 }
 
 @media (max-width:640px){
     .overlay h1{
-        position: absolute;
-        bottom: 25px;
-        left: 20%;
-        font-size: 16px;
+        position: relative;
+        top: 80%;
+        font-size: 18px;
         text-align: center;
     }
     
