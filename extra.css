@@ -232,6 +232,7 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
     position: absolute;
     bottom: 25px;
     left: 25%;
+    width: 60%
     font-size: 28px;
     text-align: center;
 }
