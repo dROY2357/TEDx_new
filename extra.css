@@ -55,7 +55,7 @@ body{
 }
 
 .grad{
-    background: linear-gradient(30deg, red 15%, pink 40%, purple 70%, red 100%);
+    background: linear-gradient(52deg, #de1738 20%, #fc9842 60%, #ed190e 80%);
     background-size: 400%;
     animation: gradientBG 10s ease-in-out infinite;
 }
