@@ -155,7 +155,11 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 
 .tagline{font-size: 36px;}
 
+footer{height: 320px;}
+
 @media (max-width:640px){
+    footer{height: 600px;}
+
     .spkimg{
         display: block;
         width: 60%;
