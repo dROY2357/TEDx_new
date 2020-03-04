@@ -2,6 +2,9 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+.sidepanel_container a{
+    color: white;
+}
 @font-face {
   font-family: chalet;
   src: url(chalet.otf);

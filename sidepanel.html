@@ -10,25 +10,34 @@
     <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
 </head>
 <body>
-        <div class="pivot_container zi2 primary_white" style="padding: 2px 12px;">
-            <img style="width: 60px;" src="home.png" alt="dsc_logo">
-            <button  aria-label="Menu" class="frost_container right icon" onmouseover="frosting();" onclick="openside1();" style="background: rgba(255, 255, 255, 0);">
-                <span class="frost"><i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i></span>
+    <div id="body">
+
+        <div class="topnav zi2 primary_inverted" style="padding: 10px 15px;">
+            <button  aria-label="Menu" class="right icon" onclick="openside1();" style="background: rgba(255, 255, 255, 0); color: white">
+                <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
             </button>
-        </div>
-    <div class="sidepanel_container" id="side1">
-        <div class="sidepanel_content zi3 right" id="modct1">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button><br><br><br>
-            <div class="page_container">
-                <a href="index.html"><div class="large12 panel_item">Home</div></a>
-                <a href="speaker/speaker1.html"><div class="large12 panel_item">Speakers</div></a>
-                <a href="partners/partner.html"><div class="large12 panel_item">Partners</div></a>
-                <a href="index.html"><div class="large12 panel_item">Schedule</div></a>
-                <a href="index.html"><div class="large12 panel_item">About</div></a>
-                <a href="social/social.html"><div class="large12 panel_item">Social</div></a>
+            <div style="font-family: 'Segoe UI' ,Arial, Helvetica, sans-serif;">
+                <span style="color: red;">TEDx</span><span style="color: white">REVAUniversity</span><br>
+                <span style="color: red; font-size: 10px;">x</span><span style="color: white; font-size: 10px;">=Independentaly Organized TED Event</span>
+            </div>
+        </div>        
+
+    </div>
+    
+        <div class="sidepanel_container" id="side1" style="background: #2e2e2e55;">
+            <div class="sidepanel_content zi3 right" id="modct1" style="background: #2e2e2e;">
+                <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button><br><br><br>
+                <div class="page_container">
+                    <a href="index.html"><div class="large12 panel_item">Home</div></a>
+                    <a href="speaker/speaker1.html"><div class="large12 panel_item">Speakers</div></a>
+                    <a href="partners/partner.html"><div class="large12 panel_item">Partners</div></a>
+                    <a href="index.html"><div class="large12 panel_item">Schedule</div></a>
+                    <a href="index.html"><div class="large12 panel_item">About</div></a>
+                    <a href="social/social.html"><div class="large12 panel_item">Social</div></a>
+                    <a href="2019.html"><div class="large12 panel_item">Watch Previous Talks</div></a>
+                </div>
             </div>
         </div>
-    </div>
     
 </body>
 </html>
