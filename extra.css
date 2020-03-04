@@ -155,10 +155,10 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 
 .tagline{font-size: 36px;}
 
-footer{height: 320px;}
+footer{max-height: 360px;}
 
 @media (max-width:640px){
-    footer{height: 600px;}
+    footer{min-height: 550px;}
 
     .spkimg{
         display: block;
@@ -192,6 +192,7 @@ footer{height: 320px;}
         position: relative;
         margin-top: 25%;
     }
+    footer{max-height: 390px;}
     
     .large6{width: 48%; height: 700px;}
 
