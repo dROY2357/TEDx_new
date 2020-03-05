@@ -8,9 +8,11 @@
         <link href="https://fluentdesignforweb.github.io/Icons/css/fluent-icons.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://fluentdesignforweb.github.io/fluent.js"></script>
+        <script src="spkslide.js"></script>
+        <script src="on_screen_window.js"></script>
     </head>
 
-    <body class="primary_inverted">
+    <body class="primary_inverted" onload="showslide1();">
 <div id="body">
         <div class="topnav zi2 primary_inverted" style="padding: 10px 15px; position: sticky; top: 2px;">
             <button  aria-label="Menu" class="right icon" onclick="openside1();" style="background: rgba(255, 255, 255, 0); color: white">
@@ -21,12 +23,30 @@
                 <span style="color: red; font-size: 10px;">x</span><span style="color: white; font-size: 10px;">=Independentaly Organized TED Event</span>
             </div>
         </div>  
-<br>
-        <div class="page_container">
-            <img src="Jadav-Payeng.jpg" alt="" class="spkimg center">
+        <br>
+        <div class="page_container" id="slide1">
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronLeftMed" onclick="showslide3();"></i></button></div>
+            <div class="column large10 medium9 small10"><img style="background: linear-gradient(45deg, red, orange);" src="bigxphone.png" alt="" class="spkimg center"></div>
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronRightMed" onclick="showslide2();"></i></button></div>
+            <p class="bottom-left"><span style="color: red">First </span>Speaker</p> 
+            <button class="bottom-l" onclick="openmod1();">Know More</button>
         </div>
-        <p class="bottom-left"><span style="color: red">Jadav  </span>Payeng</p> 
-        <button class="bottom-l" onclick="openmod1();">Know More</button>
+
+        <div class="page_container" id="slide2">
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronLeftMed" onclick="showslide1();"></i></button></div>
+            <div class="column large10 medium9 small10"><img style="background: linear-gradient(45deg, orange, purple);" s src="bigxphone.png" alt="" class="spkimg center"></div>
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronRightMed" onclick="showslide3();"></i></button></div>
+            <p class="bottom-left"><span style="color: red">Second </span>Speaker</p> 
+            <button class="bottom-l" onclick="openmod2();">Know More</button>
+        </div>
+        
+        <div class="page_container" id="slide3">
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronLeftMed" onclick="showslide2();"></i></button></div>
+            <div class="column large10 medium9 small10"><img style="background: linear-gradient(45deg, purple, yellow);" s src="bigxphone.png" alt="" class="spkimg center"></div>
+            <div class="column large1 medium1 small1"><button style="position: absolute; top: 45%;" class="icon-large circular primary_red" disabled><i aria-hidden="false" class="ms-Icon ms-Icon--ChevronRightMed" onclick="showslide1();"></i></button></div>
+            <p class="bottom-left"><span style="color: red">Third </span>Speaker</p> 
+            <button class="bottom-l" onclick="openmod3();">Know More</button>
+        </div>
         
     </body>
    
@@ -50,185 +70,58 @@
 </div>
 
 <div class="modal_container" id="mod1" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
+    <div class="modal_content zi3" id="modct1" style="background: #2e2e2e;">
         <div class="dialogue_pane large12">
             <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
         </div>
         <div class="page_container">
-            <h2>Jadav Payeng</h2>
+            <h2>First Speaker</h2>
             <br><br>
             <p style="font-size: 20px;">
-                Jadav Payeng better known as The Forest Man of India, lead to the creation of the Molai Forest
-                named after him near Kokilamukh of Jorhat, Assam which encompasses an area of about 1,360
-                acres. A green warrior who provided home to over a hundred deer, wild boars, few Royal Bengal
-                Tigers and many more. His journey started after he witnessed wildlife suffering because of lack of
-                trees and decided to take matters into his own hands, a young boy just around 16 years old, on a
-                sandbar of the river Brahmaputra started working by planting 20 bamboo seedlings, later that same
-                year he got together with forestry division of Golaghat district on a rejuvenation project which
-                lasted 5 years and after completion he choose to stay back not just to look after the land, but also
-                continuing to plant more trees in effort to transform the area, this went on for more than 30 years
-                and the rest is history.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste expedita illum quae eligendi nemo cumque dolorem laudantium quis consectetur iusto distinctio at ex, ut autem sed assumenda laboriosam id.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi ducimus provident beatae vitae unde tempore enim. Illum veniam dicta est molestias? Est, eaque ullam omnis, neque at reprehenderit ipsum mollitia quisquam repellendus ad cupiditate perspiciatis illo? Atque, dicta pariatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae aut, provident corrupti id error labore, accusantium architecto perspiciatis quam culpa rerum reprehenderit eaque tenetur quae, unde et commodi maxime sequi placeat? Impedit earum cupiditate sit nesciunt ullam! Officia distinctio voluptatum voluptas necessitatibus consectetur optio blanditiis quas velit maiores nostrum? Nesciunt iusto pariatur similique rerum, eos aliquam totam quod laudantium. Nesciunt neque officiis iusto est minima, similique vel explicabo aliquam, repudiandae praesentium adipisci at illum quisquam assumenda quae officia quibusdam. Enim nisi sapiente autem deserunt cumque non consequuntur voluptatem inventore dolor distinctio, et porro odio fugiat assumenda similique accusamus tempore.
             </p>
         </div>
     </div>
 </div>
 
 <div class="modal_container" id="mod2" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
+    <div class="modal_content zi3" id="modct1" style="background: #2e2e2e;">
         <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
+            <button class="primary_red right ta_center mod_close_btn" onclick="closemod2();">X</button>
         </div>
         <div class="page_container">
-            <h2>Dr. Rajah Vijaykumar</h2>
+            <h2>Second Speaker</h2>
             <br><br>
             <p style="font-size: 20px;">
-                Dr Vijaykumar has a basic bachelor’s degree in science, post-graduation in Microelectronics a
-Doctoral of Science in Medical Engineering, a Master of Business Administration in Corporate
-Crisis Management. His impressive profile full of scientific jargon(s) that a common man cannot
-comprehend. He holds various patents useful in health care and other fields of life from a very
-young age. The Chairman of Organisation de Scalene Foundation, a passionate scientific researcher,
-innovator and a fantastic speaker. For nearly two decades he has been working on regenerative
-tissue engineering, artificial intelligence and neural networks in medical diagnosis and engineering.
-Out of many notable achievements he is best known for developing CYTOTRON®, an anti-cancer
-kit which got designation of “Breakthrough Device” from the USFDA
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste expedita illum quae eligendi nemo cumque dolorem laudantium quis consectetur iusto distinctio at ex, ut autem sed assumenda laboriosam id.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi ducimus provident beatae vitae unde tempore enim. Illum veniam dicta est molestias? Est, eaque ullam omnis, neque at reprehenderit ipsum mollitia quisquam repellendus ad cupiditate perspiciatis illo? Atque, dicta pariatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae aut, provident corrupti id error labore, accusantium architecto perspiciatis quam culpa rerum reprehenderit eaque tenetur quae, unde et commodi maxime sequi placeat? Impedit earum cupiditate sit nesciunt ullam! Officia distinctio voluptatum voluptas necessitatibus consectetur optio blanditiis quas velit maiores nostrum? Nesciunt iusto pariatur similique rerum, eos aliquam totam quod laudantium. Nesciunt neque officiis iusto est minima, similique vel explicabo aliquam, repudiandae praesentium adipisci at illum quisquam assumenda quae officia quibusdam. Enim nisi sapiente autem deserunt cumque non consequuntur voluptatem inventore dolor distinctio, et porro odio fugiat assumenda similique accusamus tempore.
             </p>
         </div>
     </div>
 </div>
 
 <div class="modal_container" id="mod3" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
+    <div class="modal_content zi3" id="modct1" style="background: #2e2e2e;">
         <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
+            <button class="primary_red right ta_center mod_close_btn" onclick="closemod3();">X</button>
         </div>
         <div class="page_container">
-            <h2>Vaibhav Chhabra</h2>
+            <h2>Third Speaker</h2>
             <br><br>
             <p style="font-size: 20px;">
-                Vaibhav is a Mechanical Engineer by profession and a carpenter by passion, graduate from Boston
-University, Spent two years at EyeNetra building eye diagnostics devices, he then co-founded
-Maker’s Asylum, a community space focussed on fostering innovation through hands on learning it
-has various labs that are co-located in order to facilitate prototyping of ideas that are
-interdisciplinary in nature. Maker’s Asylum is the first community Makerspace in India. His various
-initiatives towards supporting the free thinkers and makers of the society is astonishing. He is also
-an instructor at MIT REDX, MIT Media Lab’s Health-tech lab in India.
 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iste expedita illum quae eligendi nemo cumque dolorem laudantium quis consectetur iusto distinctio at ex, ut autem sed assumenda laboriosam id.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi ducimus provident beatae vitae unde tempore enim. Illum veniam dicta est molestias? Est, eaque ullam omnis, neque at reprehenderit ipsum mollitia quisquam repellendus ad cupiditate perspiciatis illo? Atque, dicta pariatur.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae aut, provident corrupti id error labore, accusantium architecto perspiciatis quam culpa rerum reprehenderit eaque tenetur quae, unde et commodi maxime sequi placeat? Impedit earum cupiditate sit nesciunt ullam! Officia distinctio voluptatum voluptas necessitatibus consectetur optio blanditiis quas velit maiores nostrum? Nesciunt iusto pariatur similique rerum, eos aliquam totam quod laudantium. Nesciunt neque officiis iusto est minima, similique vel explicabo aliquam, repudiandae praesentium adipisci at illum quisquam assumenda quae officia quibusdam. Enim nisi sapiente autem deserunt cumque non consequuntur voluptatem inventore dolor distinctio, et porro odio fugiat assumenda similique accusamus tempore.
             </p>
         </div>
     </div>
 </div>
 
-<div class="modal_container" id="mod4" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
-        <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
-        </div>
-        <div class="page_container">
-            <h2>N M Pratap</h2>
-            <br><br>
-            <p style="font-size: 20px;">
-                Prathap is a young scientist who has impressed the world with his innovations, the 22-year-old is
-better known as Drone Prathap. Inspired by eagles in the sky he started building drones when he
-was just 14 years old since then he hasn’t stopped doing what he loves. To date he had built more
-than 600 drones using very less money and e-waste by teaching himself about the technologies
-associated with drone building. He has been invited over by more than 80 countries to showcase his 
-self-made projects. His creation has already saved a life and his continued innovations in this field
-is believed to help many more. Prathap already has many notable achievements and had also
-worked on border security telegraph, cryptography in drone networking system, drone in traffic
-management and National Socio Defence areas.
-            </p>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal_container" id="mod5" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
-        <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
-        </div>
-        <div class="page_container">
-            <h2>Dr. Rajendra Singh</h2>
-            <br><br>
-            <p style="font-size: 20px;">
-                Rajendra Singh is a water conversationalist from Rajasthan, India, He is a graduate in Ayurvedic
-Medicine, post-graduate in Hindi Literature, and popularly known as Water Man of India. He had
-been honoured with many awards including Stockholm Water Prize 2015, an award known as the
-Nobel prize for water. Currently he is the Chairman of Tarun Bharat Sangh, NGO along with this he
-is heading a national network of organisations working on water issues. In the past years he has
-helped in successful creation of 11,800 Johads, large crescent-shaped structures made of mud and
-rocks in more than 500 villages across the country. This water conversation technique has helped
-him revive 14 rivers and water bodies including Aravari, Tapi and Sarsa in Rajasthan, Mahakali in
-Maharashtra and Hirehalla in Karnataka.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="modal_container" id="mod6" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
-        <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
-        </div>
-        <div class="page_container">
-            <h2>Mahesh Narayanan</h2>
-            <br><br>
-            <p style="font-size: 20px;">
-                Mahesh Narayanan is an Indian Film Editor, Screenwriter, and director who mostly works in
-                Malayalam cinema. He started working as a small advert editor, subsequently progressed to edit
-                documentaries and short films, later he entered film industry with Rathri Mazha, which won five
-                Kerala State Awards. After establishing himself as an accomplished and successful editor, Mahesh
-                ventured into writing Mili, a Malayalam film. In 2017 Mahesh directed his debut feature Take Off a
-                drama thriller film, which was a blockbuster at the box office and grabbed Best Debut Director’s
-                Award For him at International Film Festival of India.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="modal_container" id="mod7" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
-        <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
-        </div>
-        <div class="page_container">
-            <h2>Franz Gastler</h2>
-            <br><br>
-            <p style="font-size: 20px;">
-                Franz grew up in Edina, Minnesota, and has been living in India since 2007. In 2008, he co-founded
-Yuwa, an organisation that uses girls’ football to combat child marriage, illiteracy, and human
-trafficking in the rural regions of Jharkhand. Franz and Yuwa have won awards from Nike
-Gamechangers, Yahoo, Barclays, Times Now, NDTV, Ashoka Changemakers, and have been
-featured in countless media including BBC, Bloomberg Businessweek, Times of India, Hindustan
-Times, Outlok, The Hindu, Indian Express, Mint, CNN-IBN, Tehelka, People Magazine and many
-more.
-
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="modal_container" id="mod8" style="background: #2e2e2e55;">
-    <div class="modal_content primary_white zi3" id="modct1">
-        <div class="dialogue_pane large12">
-            <button class="primary_red right ta_center mod_close_btn" onclick="closemod1();">X</button>
-        </div>
-        <div class="page_container">
-            <h2>Amit Goel</h2>
-            <br><br>
-            <p style="font-size: 20px;">
-                Amit is passionate about bringing actionable #FinTech focused insights, a global FinTech platform
-and index plus other innovations to the ecosystem. Refinitiv (Thomson Reuters and Blackstone
-group co.) recognized Amit as one of the global #RefinitivSocial100 top finance influencers and he
-is also recognised as the Asia top 100 FinTech people by Visa, E&Y and Next Money. Amit has
-built MEDICI (formerly LTP) which is considered the global #1 platform for everything FinTech. It
-has profiles of 12k FinTech start-ups from all over the world segmented into 40 categories and
-focused research. Amit has a strong background in strategy and market analysis and has advised
-clients (ranging from start-ups to Fortune 500) in payments, commerce and technology.
-
-            </p>
-        </div>
-    </div>
-</div>
 
 </html>
