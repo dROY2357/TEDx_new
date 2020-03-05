@@ -159,6 +159,9 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 .tagline{font-size: 36px;}
 
 footer{max-height: 360px;}
+.footer .column{
+    height: 50%;
+}
 
 @media (max-width:640px){
     footer{min-height: 550px;}
