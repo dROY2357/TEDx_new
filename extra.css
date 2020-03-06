@@ -60,8 +60,15 @@ body{
 }
 
 .horizontal::-webkit-scrollbar{
-    display: none;
+    border-radius: 7px;
+    display: block;
+    height: 22px;
+    background: #5e5e5e;
 }
+.horizontal::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #de1738;
+                                        }
 
 .grad{
     background: linear-gradient(52deg, #de1738 20%, #fc9842 60%, #ed190e 80%);
