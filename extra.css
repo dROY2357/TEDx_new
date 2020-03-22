@@ -108,7 +108,7 @@ body{
 
 a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 0%; transition: 1s ease;}
 @media (min-width:1100px){
-    .large6{width: 49%; height: 500px;}
+    .large6{width: 49%;}
 }
 .cfa{
     padding: 10px;
@@ -213,7 +213,7 @@ footer{max-height: 360px;}
     }
     footer{max-height: 390px;}
     
-    .large6{width: 48%; height: 700px;}
+    .large6{width: 48%;}
 
     .bigx{z-index: 1; background: url(bigxmed.png); height: 720px; width: 100%; background-repeat: no-repeat;}
 }
