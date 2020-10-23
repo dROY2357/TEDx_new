@@ -11,15 +11,17 @@
 </head>
 <body class="primary_inverted">
     
-    <div class="column large12 medium12 small0 pivot_container primary_inverted">
-        <button class=" primary_inverted small left"><span style="color: red">TEDx</span>REVAUniversity</button>
-        <button class=" primary_inverted small right">Schedule</button>
-        <button class=" primary_inverted small right">Partners</button>
-        <a href="speaker/speaker1.html"><button class=" primary_inverted small right">Speakers</button></a>
-        <button class=" primary_inverted small right">About</button>
-        <button class=" primary_inverted small right">Home</button>      
-    </div>
-
+<div id="body">
+        <div class="topnav zi2 primary_inverted" style="padding: 10px 15px; position: sticky; top: 2px;">
+            <button  aria-label="Menu" class="right icon" onclick="openside1();" style="background: rgba(255, 255, 255, 0); color: white">
+                <i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i>
+            </button>
+            <div style="font-family: 'Segoe UI' ,Arial, Helvetica, sans-serif;">
+                <span style="color: red;">TEDx</span><span style="color: white">REVAUniversity</span><br>
+                <span style="color: red; font-size: 10px;">x</span><span style="color: white; font-size: 10px;">=Independentaly Organized TED Event</span>
+            </div>
+        </div>  
+    
     <div class="page_container">
         <h2>#tedxreva2019</h2>
         <div class="column large8 medium8 small12 center">
@@ -33,8 +35,41 @@
                 <img src="igpost2.jpg"  class="zi3"/>
             </a>
         </div>
+    </div>  
+      <div class="footer primary_red">
+        <div class="column large6 medium6 small12">
+            <h5>Get In Touch</h5>
+            <p>Frequently Asked Question</p>
+            <p>Privacy Policy</p>
+            <p>Follow Us On</p>
+            <a href="https://www.facebook.com/tedxrevauniversity/"><button style="background-color: #1877f2; color: #ffffff;" class="zi3">Facebook</button></a>
+            <a href="https://www.instagram.com/tedxrevauniversity/"><button style="background-color: #7232bd; color: #ffffff;" class="zi3">Instagram</button></a>
+            <a href="https://youtu.be/8FzmHqF1trs"><button style="background-color: #282828; color: #ffffff;" class="zi3">YouTube</button></a>
+        </div>
+        <div class="column large6 medium6 small12">
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.89373821591!2d77.6346617!3d13.1166989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA+University!5e0!3m2!1sen!2sin!4v1522677320198" style="border: none; border-radius:10px; height:50%; width: 100%; " allowfullscreen="yes"></iframe>
+             
+        </div>
+    </div>     
 
+</div>
+
+    <div class="sidepanel_container" id="side1" style="background: #2e2e2e55;">
+        <div class="sidepanel_content zi3 right" id="modct1" style="background: #2e2e2e;">
+            <button class="primary_red right ta_center mod_close_btn" onclick="closeside1();">X</button><br><br><br>
+            <div class="page_container">
+                <a href="../index.html"><div class="large12 panel_item">Home</div></a>
+                <a href="../partners/partner.html"><div class="large12 panel_item">Partners</div></a>
+                <a href="../speakers/speaker1.html"><div class="large12 panel_item">Speakers</div></a>
+                <a href="../index.html"><div class="large12 panel_item">Schedule</div></a>
+                <a href="../index.html"><div class="large12 panel_item">About</div></a>
+                <a href="../social/social.html"><div class="large12 panel_item">Social</div></a>
+                <a href="../2019.html"><div class="large12 panel_item">Watch Previous Talks</div></a>
+            </div>
+        </div>
     </div>
+    
 
 </body>
 </html>

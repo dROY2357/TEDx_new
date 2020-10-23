@@ -2,14 +2,23 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+.sidepanel_container a{
+    color: white;
+}
 @font-face {
   font-family: chalet;
   src: url(chalet.otf);
 }
 
+.icon-large{
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
 * {
-  font-family: chalet;
-  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .team .horizontal div img{
@@ -51,11 +60,18 @@ body{
 }
 
 .horizontal::-webkit-scrollbar{
-    display: none;
+    border-radius: 7px;
+    display: block;
+    height: 22px;
+    background: #5e5e5e;
 }
+.horizontal::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #de1738;
+                                        }
 
 .grad{
-    background: linear-gradient(30deg, red 15%, pink 40%, purple 70%, red 100%);
+    background: linear-gradient(52deg, #de1738 20%, #fc9842 60%, #ed190e 80%);
     background-size: 400%;
     animation: gradientBG 10s ease-in-out infinite;
 }
@@ -92,7 +108,7 @@ body{
 
 a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 0%; transition: 1s ease;}
 @media (min-width:1100px){
-    .large6{width: 49%; height: 500px;}
+    .large6{width: 49%;}
 }
 .cfa{
     padding: 10px;
@@ -155,7 +171,14 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
 
 .tagline{font-size: 36px;}
 
+footer{max-height: 360px;}
+.footer .column{
+    height: 50%;
+}
+
 @media (max-width:640px){
+    footer{min-height: 550px;}
+
     .spkimg{
         display: block;
         width: 60%;
@@ -188,8 +211,9 @@ a:hover:before,.link:hover:before{position: absolute; left:0; bottom: 0; width: 
         position: relative;
         margin-top: 25%;
     }
+    footer{max-height: 390px;}
     
-    .large6{width: 48%; height: 700px;}
+    .large6{width: 48%;}
 
     .bigx{z-index: 1; background: url(bigxmed.png); height: 720px; width: 100%; background-repeat: no-repeat;}
 }
